@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Rudransh - Full-stack Web Developer. Building real-world solutions through code." />
+  <title>Rudransh | Web Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" >
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+    <svg class="sun-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5" />
+      <line x1="12" y1="1" x2="12" y2="3" />
+      <line x1="12" y1="21" x2="12" y2="23" />
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+      <line x1="1" y1="12" x2="3" y2="12" />
+      <line x1="21" y1="12" x2="23" y2="12" />
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+    </svg>
+    <svg class="moon-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+    </svg>
+  </button>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="#home" aria-label="Rudransh Home">RUDRANSH</a>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section id="home" class="home">
+      <div class="home-content anim-fade-up">
+        <div class="neo-badge">👋 Welcome </div>
+        <h1 class="hero-title">Hey, I'm <span class="highlight">Rudransh</span></h1>
+        <p class="home-subtitle">
+          <span id="typewriterText"></span><span class="cursor">|</span>
+        </p>
+        <p class="home-description">I don't just code — I create solutions to real-world problems through innovative design and focusing on writing clean code.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="neo-button primary">
+            <span>View My Work</span>
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+              <path d="M7 10H13M13 10L10 7M13 10L10 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+          <a href="#contact" class="neo-button secondary">
+            <span>Get In Touch</span>
+          </a>
+        </div>
+      </div>
+      <div class="home-grid">
+        <div class="grid-item gi-1 anim-scale-in" style="--delay:0.2s">
+          <span class="grid-number">8+</span>
+          <span class="grid-label">Technologies</span>
+        </div>
+        <div class="grid-item gi-2 anim-scale-in" style="--delay:0.35s">
+          <span class="grid-number">5+</span>
+          <span class="grid-label">Projects</span>
+        </div>
+        <div class="grid-item gi-3 anim-scale-in" style="--delay:0.5s">
+          <span class="grid-number">∞</span>
+          <span class="grid-label">Curiosity</span>
+        </div>
+        <div class="grid-item gi-4 anim-scale-in" style="--delay:0.65s">
+          <span class="grid-number">24/7</span>
+          <span class="grid-label">Dedication</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-me">
+      <h2 class="section-title anim-fade-up">About Me</h2>
+      <div class="about-container">
+        <div class="neo-card bio anim-fade-up" style="--delay:0.1s">
+          <div class="card-header">
+            <span class="card-icon">🧑‍💻</span>
+            <h3>Bio</h3>
+          </div>
+          <p>
+            I'm a passionate and dedicated student with a strong interest in technology and web development. I enjoy
+            learning how things work and building projects that improve my practical skills. I believe in consistency,
+            discipline, and continuous self-improvement.
+          </p>
+        </div>
+
+        <div class="neo-card goals anim-fade-up" style="--delay:0.25s">
+          <div class="card-header">
+            <span class="card-icon">🎯</span>
+            <h3>Goals</h3>
+          </div>
+          <ul>
+            <li>To become a skilled full-stack web developer</li>
+            <li>To build real-world projects that solve practical problems</li>
+            <li>To continuously improve my coding and technical skills</li>
+            <li>To contribute to innovative and impactful technology in the future</li>
+          </ul>
+        </div>
+
+        <div class="neo-card interests anim-fade-up" style="--delay:0.4s">
+          <div class="card-header">
+            <span class="card-icon">💡</span>
+            <h3>Interests</h3>
+          </div>
+          <ul>
+            <li>Web development and designing user-friendly websites</li>
+            <li>Learning new technologies and tools</li>
+            <li>Problem solving and logical thinking</li>
+            <li>Fitness and calisthenics</li>
+            <li>Exploring educational and tech content</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="skillset">
+      <h2 class="section-title anim-fade-up">Skills</h2>
+      <div class="skills-container">
+        <section class="hard-skills anim-fade-up" style="--delay:0.1s">
+          <h3>Hard Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-tag"><span class="skill-dot"></span>Web Development</div>
+            <div class="skill-tag"><span class="skill-dot"></span>UI/UX Design</div>
+            <div class="skill-tag"><span class="skill-dot"></span>Photoshop</div>
+            <div class="skill-tag"><span class="skill-dot"></span>Database Management</div>
+            <div class="skill-tag"><span class="skill-dot"></span>Video Editing</div>
+            <div class="skill-tag"><span class="skill-dot"></span>Git GitHub</div>
+          </div>
+        </section>
+        <section class="soft-skills anim-fade-up" style="--delay:0.25s">
+          <h3>Soft Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-tag"><span class="skill-dot"></span>Problem Solver</div>
+            <div class="skill-tag"><span class="skill-dot"></span>Communication</div>
+            <div class="skill-tag"><span class="skill-dot"></span>Quick Learner</div>
+            <div class="skill-tag"><span class="skill-dot"></span>Consistent Builder</div>
+            <div class="skill-tag"><span class="skill-dot"></span>LeaderShip</div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="tech-stack" class="tech-stack">
+      <h2 class="section-title anim-fade-up">Tech Stack</h2>
+      <div class="slider-wrapper">
+        <div class="tech-slider" id="techSlider">
+          <div class="tech-slide">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+            <span>HTML</span>
+          </div>
+          <div class="tech-slide">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+            <span>CSS</span>
+          </div>
+          <div class="tech-slide">
+            <img src=" https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+          <div class="tech-slide">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+              alt="Bootstrap" />
+            <span>Bootstrap</span>
+          </div>
+          <div class="tech-slide">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+              alt="Tailwind CSS" />
+            <span>Tailwind</span>
+          </div>
+          <div class="tech-slide">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" />
+            <span>Figma</span>
+          </div>
+          <div class="tech-slide">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" />
+            <span>C</span>
+          </div>
+          <div class="tech-slide">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="tech-slide">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+            <span>Java</span>
+          </div>
+        </div>
+      </div>
+      <div class="slider-dots" id="sliderDots"></div>
+    </section>
+
+    <section id="resume" class="resume">
+      <div class="resume-content anim-fade-up">
+        <h2 class="section-title">Resume</h2>
+        <p><strong>Download my resume to learn more about my experience and qualifications.</p>
+        <a href="#" class="neo-button primary resume-button" download aria-label="Download resume">
+          <span>Download Resume</span>
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M10 2V14M10 14L6 10M10 14L14 10M2 18H18" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+        <br><br>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2 class="section-title anim-fade-up">My Projects</h2>
+      <div class="project-container">
+        <article class="neo-project-card anim-fade-up" style="--delay:0.1s">
+          <div class="project-image">
+            <img src="images/skillhub-new.png" alt="SkillHub project screenshot" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <h3>SkillHub</h3>
+            <p>A platform to connect learners with mentors. Built to help students grow skills efficiently.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech">HTML</span>
+              <span class="project-tech">CSS</span>
+              <span class="project-tech">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://rudranshcoder.github.io/web-page-of-skill-/" target="_blank" rel="noopener noreferrer"
+                class="neo-button small">Live Demo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="neo-project-card anim-fade-up" style="--delay:0.25s">
+          <div class="project-image">
+            <img src="images\netlix ss.png" alt="Quiz Game project screenshot" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <h3>Netflix Login Page </h3>
+            <p>A replica login page for Netflix with a modern design.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech">HTML</span>
+              <span class="project-tech">CSS</span>
+              <span class="project-tech">JavaScript</span>
+
+            </div>
+            <div class="project-links">
+              <a href="https://netflix-login-page-vert.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="neo-button small">Live Demo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="neo-project-card anim-fade-up" style="--delay:0.25s">
+          <div class="project-image">
+            <img src="images/quiz.PNG" alt="Quiz Game project screenshot" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <h3>Quiz Game</h3>
+            <p>Simple but interactive multiple choice quiz game with score tracking and dynamic questions.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech">HTML</span>
+              <span class="project-tech">CSS</span>
+              <span class="project-tech">JavaScript</span>
+
+            </div>
+            <div class="project-links">
+              <a href="https://rudranshcoder.github.io/Quiz-game/" target="_blank" rel="noopener noreferrer"
+                class="neo-button small">Live Demo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="neo-project-card anim-fade-up" style="--delay:0.4s">
+          <div class="project-image">
+            <img src="images\Housify Home pg.png" alt="Real Estate Platform project screenshot" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <h3>Housify | Real Estate Platform</h3>
+            <p>A platform to list real estate online with modern design and seamless user experience.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech">HTML</span>
+              <span class="project-tech">CSS</span>
+              <span class="project-tech">JS</span>
+              <span class="project-tech">Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="##" target="_blank" rel="noopener noreferrer" class="neo-button small">Live Demo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="neo-project-card anim-fade-up" style="--delay:0.25s">
+          <div class="project-image">
+            <img src="images\Color-palette.png" alt="Color Palette generator" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <h3>Color Palette generator</h3>
+            <p>Tool for generating a set of visually compitable colors based on color theory.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech">HTML</span>
+              <span class="project-tech">CSS</span>
+              <span class="project-tech">JavaScript</span>
+
+            </div>
+            <div class="project-links">
+              <a href="" target="_blank" rel="noopener noreferrer"
+                class="neo-button small">Live Demo →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="neo-project-card anim-fade-up" style="--delay:0.25s">
+          <div class="project-image">
+            <img src="images\tic tac toe .png" alt="Tic Tac Toe Game" loading="lazy" />
+          </div>
+          <div class="project-content">
+            <h3>Tic Tac Toe Game</h3>
+            <p>Simple two player game played on 3x3 grid.</p>
+            <div class="project-tech-tags">
+              <span class="project-tech">HTML</span>
+              <span class="project-tech">CSS</span>
+              <span class="project-tech">JavaScript</span>
+
+            </div>
+            <div class="project-links">
+              <a href="https://tic-tac-toe-game-seven-ebon.vercel.app/" target="_blank" rel="noopener noreferrer"
+                class="neo-button small">Live Demo →</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="footer">
+    <div class="footer-container">
+      <div class="footer-column contact-form">
+        <h3>Get In Touch</h3>
+        <form id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required aria-required="true">
+            <span class="error-message" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required aria-required="true">
+            <span class="error-message" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message here..." rows="4" required
+              aria-required="true"></textarea>
+            <span class="error-message" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="neo-button primary submit-button">Send Message</button>
+          <span class="form-status" id="formStatus"></span>
+        </form>
+      </div>
+
+      <div class="footer-column navigation">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column contact-info">
+        <h3>Contact Info</h3>
+        <p>
+          <strong>Phone</strong><br>
+          <a href="tel:+91-705875095">+91-7058757095</a>
+        </p>
+        <p>
+          <strong>Email</strong><br>
+          <a href="mailto:rudranshmjaiswal@gmail.com">rudranshmjaiswal@gmail.com</a>
+        </p>
+        <p>
+          <strong>LinkedIn</strong><br>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+            linkedin.com/in/yourprofile
+          </a>
+        </p>
+        <div class="social-links">
+          <h3>GitHub Account</h3>
+          <a href="https://githu  b.com/RudranshCoder" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 | Rudransh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="javascript/script.js"></script>
+</body>
+
+</html>
+ 
