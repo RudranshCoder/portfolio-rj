@@ -207,4 +207,45 @@ document.addEventListener('DOMContentLoaded', () => {
       navbar.style.boxShadow = 'none';
     }
   }, { passive: true });
+
+  const certModal = document.getElementById('certModal');
+  const modalImg = document.getElementById('modalImg');
+  const closeModal = document.getElementById('closeModal');
+  const viewCertBtns = document.querySelectorAll('.cert-card');
+
+  viewCertBtns.forEach(card => {
+    card.addEventListener('click', () => {
+      const img = card.querySelector('img');
+      if (img) {
+        modalImg.src = img.src;
+        modalImg.alt = img.alt;
+        certModal.classList.add('active');
+        certModal.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden'; 
+      }
+    });
+  });
+
+  function closeCertModal() {
+    certModal.classList.remove('active');
+    certModal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = ''; 
+  }
+
+  closeModal.addEventListener('click', (e) => {
+    e.stopPropagation();
+    closeCertModal();
+  });
+
+  certModal.addEventListener('click', (e) => {
+    if (e.target === certModal) {
+      closeCertModal();
+    }
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && certModal.classList.contains('active')) {
+      closeCertModal();
+    }
+  });
 });
